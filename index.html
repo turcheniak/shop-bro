@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>E&O Shop BRO</title>
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
 </head>
 <body>
-    
     <header id="home">
         <nav>
             <img class="logo" src="img/logo.jpg" alt="logo">
@@ -26,35 +26,43 @@
             </div>
         </div>
     </header>
-    
     <main>
         <section id="products">
             <h2>Продукція</h2>
             <div class="product-list">
-                <article class="product-card">
-                    <img src="img/t-shirt.jpg" alt="Футболки">
-                    <h3>Друк на футболках</h3>
-                </article>
-                <article class="product-card">
-                    <img src="img/cap.jpg" alt="Кепкі">
-                    <h3>Друк на кепках</h3>
-                </article>
-                <article class="product-card">
-                    <img src="img/blouse.jpg" alt="Кофти">
-                    <h3>Друк на кофтах</h3>
-                </article>
-                <article class="product-card">
-                    <img src="img/cup.jpg" alt="Чашки">
-                    <h3>Друк на чашках</h3>
-                </article>
-                <article class="product-card">
-                    <img src="img/umbrella.jpg" alt="Парасольки">
-                    <h3>Друк на парасольках</h3>
-                </article>
+                <div class="product-card">
+                    <a target="_self" href="t-shirt.html">
+                        <img src="img/t-shirt.jpg" alt="Футболки">
+                    </a>
+                    <div class="review">Друк на футболках</div>
+                </div>
+                <div class="product-card">
+                    <a target="_self" href="cap.html">
+                        <img src="img/cap.jpg" alt="Кепкі">
+                    </a>
+                    <div class="review">Друк на кепках</div>
+                </div>
+                <div class="product-card">
+                    <a target="_self" href="blouse.html">
+                        <img src="img/blouse.jpg" alt="Кофти">
+                    </a>
+                    <div class="review">Друк на кофтах</div>
+                </div>
+                <div class="product-card">
+                    <a target="_self" href="cup.html">
+                        <img src="img/cup.jpg" alt="Чашки">
+                    </a>
+                    <div class="review">Друк на чашках</div>
+                </div>
+                <div class="product-card">
+                    <a target="_self" href="umbrella.html">
+                        <img src="img/umbrella.jpg" alt="Парасольки">
+                    </a>
+                    <div class="review">Друк на парасольках</div>
+                </div>
             </div>
         </section>
     </main>
-    
     <section id="about_us">
         <h2>Наша компанія</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -71,15 +79,15 @@
         viverra. Pellentesque arcu mauris, malesuada quis ornare 
         , blandit sed diam.</p>
     </section>
-    
     <footer id="contacts">
         <section>
             <h2>Контакти</h2>
             
-            <article>
+            <article class="location">
                 <h3>Як нас знайти</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3061.105569706121!2d23.92005285309671!3d49.82229878882454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1532902355750" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </article>
-            <article>
+            <article class="feedback">
                 <h3>Зворотній зв'язок</h3>
                 <form method="POST" action="https://formspree.io/turcheniak.oleg@gmail.com">
                     <input type="text" name="П.І.Б." id="client-name" title="client-name" placeholder="П.І.Б." required>
@@ -89,10 +97,11 @@
                     <textarea name="message" rows="10" cols="30" title="comment" placeholder="Залишіть свій коментар"></textarea>
                     <br><br>
                     <input type="submit" value="Відправити" />
+                    <br><br>
                 </form>
             </article>
         </section>
-        <div>
+        <div class="end">
             <p>Copyright 2018 by turcheniak.oleg@gmail.com</p>
         </div>
     </footer>
