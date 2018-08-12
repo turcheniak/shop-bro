@@ -6,90 +6,53 @@
 }
 
 body {
-    max-width: 980px;
+    max-width: 1000px;
     margin: auto;
     padding: 0 5px;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
 .logo {
-    width: 200px;
-    height: 130px;
-    background-size: 100% 100%;
-}
-
-header nav ul {
-    margin-left: 0;
-    padding-left: 0;
-}
-
-header nav ul li {
-    list-style-type: none;
-}
-
-header nav ul li a {
-    color: black;
-    text-decoration: none;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
+    width: 120px;
+    height: 90px;
 }
 
 .logo_instagram {
-    width: 40px;
-    height: 40px;
-    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
 }
 
-@media (min-width: 600px) {
-    header nav {
-        display: flex;
-    }
-    header ul {
-        display: flex;
-        flex: 1;
-        align-items: center;
-    }
-    header nav ul li {
-        margin-left: 2%;
-    }
-    header nav ul li:last-child {
-        margin-left: auto;
-    }
-}
-
-header div.banner {
-    height: 380px;
-    background-image: url(../img/banner_t-shirt.png);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header div.banner div {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+main {
+    margin-top: 30px;
+    border-top-color: rgba(180, 180, 180, 0.6);
+    border-top-style: solid;
+    padding-top: 25px;
 }
 
 main h2 {
    text-align: center;
+   padding-bottom: 20px;
+   
 }
 
 .product-card {
-    margin: 12px;
-    padding: 3px;
-    float: left;
+    margin: 22px;
     width: 150px;
     
 }
 
+div.product-list {
+    flex-flow:row wrap;
+    justify-content: space-between;
+}
+
 .product-card img {
-    
-    width: 150px;
+    width: 100%;
     height: 150px;
     border: 2px solid #ccc;
     border-radius: 100px;
@@ -109,40 +72,73 @@ div.review {
     .product-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 5px;
-        row-gap: 5px;
-    }
+      }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 590px) {
     .product-list {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 780px) {
+    .product-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 970px) {
     .product-list {
         grid-template-columns: repeat(5, 1fr);
     }
 }
 
 #about_us {
-    border-top-style: solid;
+    margin-top: 30px;
     border-top-color: rgba(180, 180, 180, 0.6);
+    border-top-style: solid;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 #about_us h2 {
      text-align: center;
+     padding-bottom: 20px;
 }
 
 footer {
-    border-top-style: solid;
+    margin-top: 30px;
     border-top-color: rgba(180, 180, 180, 0.6);
-    
+    border-top-style: solid;
+    padding-top: 25px;
 }
 
 footer h2 {
     text-align: center;
+    padding-bottom: 20px;
+}
+.contact-list {
+    flex-flow:row wrap;
+    justify-content: space-around;
+}
+
+@media (min-width: 400px) {
+    .contact-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
+@media (min-width: 600px) {
+    .contact-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.location-map {
+    width: 300px;
+    height: 200px;
+    border:0;
 }
 
 footer div.end {
@@ -154,7 +150,6 @@ footer div.end {
 }
 
 footer div.end p {
-    color: black;
     background-position: center;
     font-size: 10px;
 }
