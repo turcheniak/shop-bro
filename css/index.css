@@ -77,18 +77,21 @@ div.review {
 
 @media (min-width: 590px) {
     .product-list {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media (min-width: 780px) {
     .product-list {
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (min-width: 970px) {
     .product-list {
+        display: grid;
         grid-template-columns: repeat(5, 1fr);
     }
 }
@@ -117,28 +120,68 @@ footer h2 {
     text-align: center;
     padding-bottom: 20px;
 }
+
+div .contact-card {
+    width: 100%;
+    margin-bottom: 30px;
+}
 .contact-list {
+    margin: 10px;
     flex-flow:row wrap;
-    justify-content: space-around;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 742px) {
     .contact-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-      }
+    }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
     .contact-list {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
+.icons{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.icons-sm{
+    padding-left: 30px;    
+}
+
+.conts{
+    list-style-type: none;
+}
+
 .location-map {
-    width: 300px;
+    width: 90%;
     height: 200px;
     border:0;
+}
+
+.location h3 {
+    padding-bottom: 20px;
+}
+
+.feedback h3 {
+    padding-bottom: 20px;
+}
+
+input {
+    width: 90%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 90%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
 }
 
 footer div.end {
@@ -150,6 +193,6 @@ footer div.end {
 }
 
 footer div.end p {
-    background-position: center;
+  
     font-size: 10px;
 }
