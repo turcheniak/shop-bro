@@ -27,14 +27,14 @@ body {
     height: 50px;
 }
 
-main {
+#products {
     margin-top: 30px;
     border-top-color: rgba(180, 180, 180, 0.6);
     border-top-style: solid;
     padding-top: 25px;
 }
 
-main h2 {
+#products h2 {
    text-align: center;
    padding-bottom: 20px;
    
@@ -109,6 +109,11 @@ div.review {
      padding-bottom: 20px;
 }
 
+#about_us p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 footer {
     margin-top: 30px;
     border-top-color: rgba(180, 180, 180, 0.6);
@@ -124,6 +129,7 @@ footer h2 {
 div .contact-card {
     width: 100%;
     margin-bottom: 30px;
+    padding-left: 10px;
 }
 .contact-list {
     margin: 10px;
@@ -151,7 +157,8 @@ div .contact-card {
 }
 
 .icons-sm{
-    padding-left: 30px;    
+    padding-left: 35px;
+    margin-top: 10px;
 }
 
 .conts{
@@ -184,6 +191,11 @@ textarea {
     border-radius: 10px;
 }
 
+.btm {
+    background-color: rgba(180, 180, 180, 0.6);
+    width: 50%;
+}
+
 footer div.end {
     height: 30px;
     background-color: rgba(180, 180, 180, 0.6);
@@ -193,6 +205,5 @@ footer div.end {
 }
 
 footer div.end p {
-  
     font-size: 10px;
 }
