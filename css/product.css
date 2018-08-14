@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.product-bor{
+.product-bor {
     margin-top: 30px;
     border-top-color: rgba(180, 180, 180, 0.6);
     border-top-style: solid;
@@ -10,9 +10,8 @@
 }
 
 .product-bor h2 {
-   text-align: center;
-   padding-bottom: 20px;
-   
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .product-info {
@@ -22,7 +21,6 @@
 
 .galery-card {
     margin: 20px;
-   
 }
 
 .galery-card img {
@@ -30,9 +28,6 @@
     border: 2px solid #ccc;
     border-radius: 500px;
 }
-
-
-
 
 @media (min-width: 501px) {
     .galery-list {
@@ -66,6 +61,7 @@ h4::first-letter {
 h3::first-letter {
     color: #b6180b;
 }
+
 h2::first-letter {
     color: #b6180b;
 }

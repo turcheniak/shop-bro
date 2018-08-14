@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-
-:root{
+:root {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -11,10 +9,14 @@ body {
     padding: 0 5px;
 }
 
+p {
+    text-indent: 30px;
+}
+
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
 
 .logo {
@@ -35,28 +37,20 @@ body {
 }
 
 #products h2 {
-   text-align: center;
-   padding-bottom: 20px;
-   
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .product-card {
     margin: 22px;
     width: 150px;
-    
 }
-
-/*div.product-list {*/
-/*    flex-flow:row wrap;*/
-/*    justify-content: space-between;*/
-/*}*/
 
 .product-card img {
     width: 100%;
     height: 150px;
     border: 2px solid #ccc;
     border-radius: 100px;
-    
 }
 
 .product-card img:hover {
@@ -72,7 +66,7 @@ div.review {
     .product-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-      }
+    }
 }
 
 @media (min-width: 590px) {
@@ -105,8 +99,8 @@ div.review {
 }
 
 #about_us h2 {
-     text-align: center;
-     padding-bottom: 20px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 #about_us p {
@@ -131,9 +125,10 @@ div .contact-card {
     margin-bottom: 30px;
     padding-left: 10px;
 }
+
 .contact-list {
     margin: 10px;
-    flex-flow:row wrap;
+    flex-flow: row wrap;
 }
 
 @media (min-width: 742px) {
@@ -150,25 +145,26 @@ div .contact-card {
     }
 }
 
-.icons{
+.icons {
     width: 25px;
     height: 25px;
     margin-right: 15px;
 }
 
-.icons-sm{
+.icons-sm {
     padding-left: 35px;
     margin-top: 10px;
 }
 
-.conts{
+.conts {
     list-style-type: none;
 }
 
 .location-map {
     width: 90%;
     height: 200px;
-    border:0;
+    border: 0;
+    border-width: 0px;
 }
 
 .location h3 {
@@ -199,9 +195,6 @@ textarea {
 footer div.end {
     height: 50px;
     background-color: rgba(180, 180, 180, 0.6);
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
 }
 
 footer div.end p {
@@ -209,7 +202,6 @@ footer div.end p {
     text-align: center;
     padding-top: 15px;
 }
-
 
 h3::first-letter {
     color: #b6180b;
