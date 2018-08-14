@@ -55,8 +55,12 @@
     }
 }
 
-h3 {
+h4 {
     text-align: center;
+}
+
+h4::first-letter {
+    color: #b6180b;
 }
 
 h3::first-letter {
