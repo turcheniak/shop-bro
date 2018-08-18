@@ -21,6 +21,8 @@
 
 .galery-card {
     margin: 20px;
+    display:grid;
+    justify-items: center;
 }
 
 .galery-card img {

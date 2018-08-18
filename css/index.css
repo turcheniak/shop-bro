@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 :root {
     font-family: 'Montserrat', sans-serif;
 }
@@ -41,9 +42,16 @@ p {
     padding-bottom: 20px;
 }
 
+.product-list {
+    display:grid;
+    justify-items: center;
+}
+
 .product-card {
     margin: 22px;
     width: 150px;
+    display:grid;
+    justify-items: center;
 }
 
 .product-card img {
